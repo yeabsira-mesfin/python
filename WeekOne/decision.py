@@ -1,8 +1,8 @@
-x = int(input("Please enter your number: "))
-if 5 < x < 10:
-    print("X is greater than 5 and less than 10")
-else:
-    print("X is not in the range")
+# x = int(input("Please enter your number: "))
+# if 5 < x < 10:
+#     print("X is greater than 5 and less than 10")
+# else:
+#     print("X is not in the range")
 # else:
 #     print("X is smaller or equal to 5")
 # grade = float(input("Please enter your grade: "))
