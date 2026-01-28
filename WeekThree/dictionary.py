@@ -81,4 +81,11 @@ continue_function = 'y'
 # del student_list[5]
 # print(student_list)
 
-print
+dictionary1 = {1:2,3:4}
+dictionary2 = {5:6,7:8}
+dictionary1.update(dictionary2)
+print(dictionary1)
+result = 2
+for i in dictionary1:
+    result *= dictionary1[i]
+print(result)
