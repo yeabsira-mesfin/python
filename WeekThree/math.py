@@ -1,0 +1,11 @@
+from math import *
+print("Sin values=",sin(30))
+print("Cos values=",cos(30))
+print ("Tan values=",tan(30))
+print ("power values=",pow(10,3))
+print("ceil values=",ceil(8888.8888))
+print ("Floor values=",floor(8888.8888))
+print("Rounded values=",round(8888.8888,2))
+print("Factorial values=",factorial(5))
+print("Truncate values=",trunc(8888.8888))
+print("gcd values=",gcd(10,15))
