@@ -16,3 +16,8 @@ import os, shutil, glob
 # str2 = "\n".join(filelist2)
 # print(str1)
 # print(str2)
+filelist1 = glob.glob("*.txt")
+print(filelist1)
+for filename in filelist1:
+    os.remove(filename)
+print(filelist1)
