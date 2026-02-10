@@ -1,3 +1,4 @@
-Yeab
-101
-100
+sname sno mark 
+Yeab 101 100
+Viva 100 101
+Ronaldo 100 100
