@@ -1,4 +1,4 @@
 sname sno mark 
 Yeab 101 100
-Viva 100 101
-Ronaldo 100 100
+Viva 10 100
+Ronaldo 7 100
