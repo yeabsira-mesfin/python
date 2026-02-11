@@ -1,0 +1,6 @@
+f = open("D:\\Python\\MyOwnPractices\\python\\Week5\\binary.txt", "wb")
+text  = int(input("Please input any number"))
+to_binary = bin(text)
+f.write(to_binary.encode())
+print(to_binary)
+f.close()
