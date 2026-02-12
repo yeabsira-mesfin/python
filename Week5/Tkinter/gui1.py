@@ -35,3 +35,24 @@ from tkinter import *
 # window.geometry('350x350')
 
 # window.mainloop()
+# window = Tk()
+# window.title("Welcome to my app")
+# window.geometry('350x400')
+# lbl = Label(window,text="Hello")
+# lbl.grid(column=0,row=0)
+# btn = Button(window,text="Click Moi")
+# btn.grid(column=0,row=2)
+# window.mainloop()
+
+window = Tk()
+window.title("This is my mini app!")
+window.geometry('360x400')
+lbl = Label(window,text="Hello")
+lbl.grid(column=0, row=0, padx=0, pady=0)
+
+def clicked():
+    lbl.configure(text="Button was clicked")
+    
+btn = Button(window,text="Click Me", command=clicked)
+btn.grid(column=1,row=0)
+window.mainloop()
