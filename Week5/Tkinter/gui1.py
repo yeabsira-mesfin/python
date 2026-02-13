@@ -133,12 +133,19 @@ from tkinter import messagebox
 # btn.grid(column=1,row=1)
 # window.mainloop()
 
-window = Tk()
-window.title("Message Box")
-window.geometry("350x400")
-def clicked():
-    messagebox.showinfo("Message title","You have a notification from message box please click okay :)")
+# window = Tk()
+# window.title("Message Box")
+# window.geometry("350x400")
+# def clicked():
+#     messagebox.showinfo("Message title","You have a notification from message box please click okay :)")
 
-btn = Button(window,text="Click here", command=clicked)
-btn.grid(column=0,row=0)
+# btn = Button(window,text="Click here", command=clicked)
+# btn.grid(column=0,row=0)
+# window.mainloop()
+
+window = Tk()
+window.title("Welcome to spinbox!")
+window.geometry("350x400")
+spin = Spinbox(window,from_=0,to=100,width=0)
+spin.grid(column=0,row=0)
 window.mainloop()
