@@ -79,17 +79,27 @@ from tkinter.ttk import *
 
 
 
-window = Tk()
+# window = Tk()
 
-window.title("This is my app!")
-window.geometry("350x400")
+# window.title("This is my app!")
+# window.geometry("350x400")
 
-combo = Combobox(window)
-combo["values"] = (1,2,3,4,5,"Text")
-combo.current(1)
-combo.grid(column=0,row=0)
-window.mainloop()
+# combo = Combobox(window)
+# combo["values"] = (1,2,3,4,5,"Text")
+# combo.current(1)
+# combo.grid(column=0,row=0)
+# window.mainloop()
 
+# window = Tk()
+# window.title("This is my app")
+# window.geometry("350x400")
+
+# chk_state = BooleanVar()
+# # chk_state.set(False)
+
+# chk = Checkbutton(window,text="Choose", var=chk_state)
+# chk.grid(column=0,row=0)
+# window.mainloop()
 
 
 
