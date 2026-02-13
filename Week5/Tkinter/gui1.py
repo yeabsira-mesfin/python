@@ -1,5 +1,7 @@
 from tkinter import *
-from tkinter.ttk import * 
+from tkinter import messagebox
+# import tkinter as tk
+# from tkinter import ttk
 # # window = Tk()
 # # window.title("Welcome to all! ")
 # # window.geometry('100x100')
@@ -77,8 +79,6 @@ from tkinter.ttk import *
 # btn.grid(column=2,row=0)
 # window.mainloop()
 
-
-
 # window = Tk()
 
 # window.title("This is my app!")
@@ -101,15 +101,44 @@ from tkinter.ttk import *
 # chk.grid(column=0,row=0)
 # window.mainloop()
 
+# window = Tk()
+# window.title("This is the app!")
+# window.geometry("350x400")
+# rad1 = Radiobutton(window,text="First",value=1)
+# rad2 = Radiobutton(window,text="Second",value=2)
+# rad3 = Radiobutton(window,text="Third",value=3)
+
+# rad1.grid(column=0,row=0)
+# rad2.grid(column=1, row=0)
+# rad3.grid(column=3,row=0)
+
+# window.mainloop()
+
+# window = tk.Tk()
+# window.title("Welcome to my app!")
+# window.geometry("350x400")
+# selected = tk.IntVar()
+
+# rad1 = ttk.Radiobutton(window,value=1,text="First",variable=selected)
+# rad2 = ttk.Radiobutton(window,value=2,text="Second",variable=selected)
+# rad3 = ttk.Radiobutton(window,value=3,text="Third",variable=selected)
+
+# def clicked():
+#     print(selected.get())
+# btn = tk.Button(window,text="Click me", command=clicked)
+
+# rad1.grid(column=0,row=0)
+# rad2.grid(column=1,row=0)
+# rad3.grid(column=2,row=0)
+# btn.grid(column=1,row=1)
+# window.mainloop()
+
 window = Tk()
-window.title("This is the app!")
+window.title("Message Box")
 window.geometry("350x400")
-rad1 = Radiobutton(window,text="First",value=1)
-rad2 = Radiobutton(window,text="Second",value=2)
-rad3 = Radiobutton(window,text="Third",value=3)
+def clicked():
+    messagebox.showinfo("Message title","You have a notification from message box please click okay :)")
 
-rad1.grid(column=0,row=0)
-rad2.grid(column=1, row=0)
-rad3.grid(column=3,row=0)
-
+btn = Button(window,text="Click here", command=clicked)
+btn.grid(column=0,row=0)
 window.mainloop()
