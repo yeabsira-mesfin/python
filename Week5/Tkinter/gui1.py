@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.ttk import * 
 # # window = Tk()
 # # window.title("Welcome to all! ")
 # # window.geometry('100x100')
@@ -44,15 +45,51 @@ from tkinter import *
 # btn.grid(column=0,row=2)
 # window.mainloop()
 
-window = Tk()
-window.title("This is my mini app!")
-window.geometry('360x400')
-lbl = Label(window,text="Hello")
-lbl.grid(column=0, row=0, padx=0, pady=0)
+# window = Tk()
+# window.title("This is my mini app!")
+# window.geometry('360x400')
+# lbl = Label(window,text="Hello")
+# lbl.grid(column=0, row=0, padx=0, pady=0)
 
-def clicked():
-    lbl.configure(text="Button was clicked")
+# def clicked():
+#     lbl.configure(text="Button was clicked")
     
-btn = Button(window,text="Click Me", command=clicked)
-btn.grid(column=1,row=0)
+# btn = Button(window,text="Click Me", command=clicked)
+# btn.grid(column=1,row=0)
+# window.mainloop()
+
+
+# window = Tk()
+# window.title("Welcome to my mini app")
+
+# window.geometry("350x400")
+
+# lbl = Label(window,text="Hey there")
+# lbl.grid(column=0, row = 0)
+
+# box = Entry(window,width=10)
+# box.grid(column=1,row=0)
+
+# def clicked():
+#     lbl.configure(text="Button was clicked")
+    
+# btn = Button(window,text="Click me", command=clicked)
+# btn.grid(column=2,row=0)
+# window.mainloop()
+
+
+
+window = Tk()
+
+window.title("This is my app!")
+window.geometry("350x400")
+
+combo = Combobox(window)
+combo["values"] = (1,2,3,4,5,"Text")
+combo.current(1)
+combo.grid(column=0,row=0)
 window.mainloop()
+
+
+
+
