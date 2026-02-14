@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 # import tkinter as tk
-# from tkinter import ttk
+from tkinter.ttk import *
 # # window = Tk()
 # # window.title("Welcome to all! ")
 # # window.geometry('100x100')
@@ -79,16 +79,16 @@ from tkinter import messagebox
 # btn.grid(column=2,row=0)
 # window.mainloop()
 
-# window = Tk()
+window = Tk()
 
-# window.title("This is my app!")
-# window.geometry("350x400")
+window.title("This is my app!")
+window.geometry("350x400")
 
-# combo = Combobox(window)
-# combo["values"] = (1,2,3,4,5,"Text")
-# combo.current(1)
-# combo.grid(column=0,row=0)
-# window.mainloop()
+combo = Combobox(window)
+combo["values"] = (1,2,3,4,5,"Text")
+combo.current(1)
+combo.grid(column=0,row=0)
+window.mainloop()
 
 # window = Tk()
 # window.title("This is my app")
@@ -143,9 +143,9 @@ from tkinter import messagebox
 # btn.grid(column=0,row=0)
 # window.mainloop()
 
-window = Tk()
-window.title("Welcome to spinbox!")
-window.geometry("350x400")
-spin = Spinbox(window,from_=0,to=100,width=0)
-spin.grid(column=0,row=0)
-window.mainloop()
+# window = Tk()
+# window.title("Welcome to spinbox!")
+# window.geometry("350x400")
+# spin = Spinbox(window,from_=0,to=100,width=0)
+# spin.grid(column=0,row=0)
+# window.mainloop()

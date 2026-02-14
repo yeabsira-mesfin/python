@@ -21,7 +21,7 @@ label3.grid(column=0,row=3)
 num3_txtbox = Entry(root)
 num3_txtbox.grid(column=1,row=3)
 
-def intvalid(value):
+def floatvalid(value):
     try:
         return float(value)
     except ValueError:
@@ -30,8 +30,8 @@ def intvalid(value):
 
 def addF():
     num3_txtbox.delete(0,END)
-    num1 = intvalid(num1_txtbox.get())
-    num2 = intvalid(num2_txtbox.get())
+    num1 = floatvalid(num1_txtbox.get())
+    num2 = floatvalid(num2_txtbox.get())
     if num1 is None or num2 is None:
         return
     sum = num1 + num2
@@ -39,8 +39,8 @@ def addF():
     
 def subF():
     num3_txtbox.delete(0,END)
-    num1 = intvalid(num1_txtbox.get())
-    num2 = intvalid(num2_txtbox.get())
+    num1 = floatvalid(num1_txtbox.get())
+    num2 = floatvalid(num2_txtbox.get())
     if num1 is None or num2 is None:
         return
     diff = num1-num2
@@ -48,8 +48,8 @@ def subF():
     
 def mulF():
     num3_txtbox.delete(0,END)
-    num1 = intvalid(num1_txtbox.get())
-    num2 = intvalid(num2_txtbox.get())
+    num1 = floatvalid(num1_txtbox.get())
+    num2 = floatvalid(num2_txtbox.get())
     if num1 is None or num2 is None:
         return
     mul = num1*num2
@@ -57,8 +57,8 @@ def mulF():
 
 def divF():
     num3_txtbox.delete(0,END)
-    num1 = intvalid(num1_txtbox.get())
-    num2 = intvalid(num2_txtbox.get())
+    num1 = floatvalid(num1_txtbox.get())
+    num2 = floatvalid(num2_txtbox.get())
     if num1 is None or num2 is None:
         return
     if num2 !=0:
