@@ -5,6 +5,7 @@ root.title("How to change your background")
 root.geometry("350x400")
 
 def change_bg(color):
+    root.configure(background="black")
     b1.configure(foreground="black")
     b2.configure(foreground="black")
     b3.configure(foreground="black")
