@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import messagebox
+from tkinter import messagebox,simpledialog
 # import tkinter as tk
 from tkinter.ttk import *
 # # window = Tk()
@@ -79,16 +79,16 @@ from tkinter.ttk import *
 # btn.grid(column=2,row=0)
 # window.mainloop()
 
-window = Tk()
+# window = Tk()
 
-window.title("This is my app!")
-window.geometry("350x400")
+# window.title("This is my app!")
+# window.geometry("350x400")
 
-combo = Combobox(window)
-combo["values"] = (1,2,3,4,5,"Text")
-combo.current(1)
-combo.grid(column=0,row=0)
-window.mainloop()
+# combo = Combobox(window)
+# combo["values"] = (1,2,3,4,5,"Text")
+# combo.current(1)
+# combo.grid(column=0,row=0)
+# window.mainloop()
 
 # window = Tk()
 # window.title("This is my app")
@@ -149,3 +149,19 @@ window.mainloop()
 # spin = Spinbox(window,from_=0,to=100,width=0)
 # spin.grid(column=0,row=0)
 # window.mainloop()
+
+# answer = messagebox.askokcancel("Question","Do you want to open this file?")
+# answer = messagebox.askretrycancel("Question", "Do you want to try that again?")
+# answer = messagebox.askyesno("Question","Do you like Python?")
+# answer = messagebox.askyesnocancel("Question", "Continue playing?")
+
+application_window = Tk()
+
+answer = simpledialog.askstring("Input", "What is your first name?",parent=application_window)
+messagebox.showinfo("Your first name is ", answer)
+answer = simpledialog.askinteger("Input", "What is your age?",parent=application_window,minvalue=0, 
+maxvalue=100)
+messagebox.showinfo("Your age is ", answer)
+answer = simpledialog.askfloat("Input", "What is your salary?",parent=application_window,minvalue=0.0, 
+maxvalue=100000.0)
+messagebox.showinfo("Your salary is ", answer)
