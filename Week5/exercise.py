@@ -1,4 +1,4 @@
-import sys
+import sys, shutil
 # with open("D:\\Python\\MyOwnPractices\\python\\Week5\\student.txt","w") as f:
 
 #     name = input("What is your name? ")
@@ -62,33 +62,51 @@ import sys
 #     lines = f.readlines()
 
 #     print(lines[2])
-def update_line(file_name, line_num, text):
-    new_num = line_num - 1
-    with open(file_name,"w+") as f:
-        for i in range(10):
-            f.write(f"This is line {i} \n")
+# def update_line(file_name, line_num, text):
+#     new_num = line_num - 1
+#     with open(file_name,"w+") as f:
+#         for i in range(10):
+#             f.write(f"This is line {i} \n")
     
-        f.seek(0) 
+#         f.seek(0) 
         
-        lines = f.readlines()
-        # print(len(lines))
-        f.seek(0)
-        if line_num < len(f.readlines()):
-            replaced = lines[new_num] = f"{text} \n"
-        else:
-            print("The number is out of index")
-            sys.exit(0)
-        f.seek(0)
-        f.writelines(lines)
-        f.seek(0)
-        print(f.read())
-    return
+#         lines = f.readlines()
+#         # print(len(lines))
+#         f.seek(0)
+#         if line_num < len(f.readlines()):
+#             replaced = lines[new_num] = f"{text} \n"
+#         else:
+#             print("The number is out of index")
+#             sys.exit(0)
+#         f.seek(0)
+#         f.writelines(lines)
+#         f.seek(0)
+#         print(f.read())
+#     return
 
-replaced = int(input("Please enter the line you would like to replace: "))
-update_line("D:\\Python\\MyOwnPractices\\python\\Week5\\replace.txt",replaced,"This is the new replacment")
+# replaced = int(input("Please enter the line you would like to replace: "))
+# update_line("D:\\Python\\MyOwnPractices\\python\\Week5\\replace.txt",replaced,"This is the new replacment")
     
         
 
 # with open("D:\\Python\\MyOwnPractices\\python\\Week5\\replace.txt","r") as f:
 
 #      print(f.read())
+
+def update_even():
+    with open("D:\\Python\\MyOwnPractices\\python\\Week5\\normal.txt","w+") as f:
+        for i in range(10):
+            f.write(f"This is line {i} \n")
+        
+        f.seek(0)
+        lines = f.readlines()
+    with open("D:\\Python\\MyOwnPractices\\python\\Week5\\even.txt","w") as f:
+        for i in range(len(lines)):
+            if (i%2 == 0) and i!=0:
+                f.write(lines[i])
+                
+        f.seek(0)
+    with open("D:\\Python\\MyOwnPractices\\python\\Week5\\even.txt", "r") as f:
+        print(f.read())
+
+update_even()
